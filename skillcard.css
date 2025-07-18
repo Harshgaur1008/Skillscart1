@@ -1,0 +1,243 @@
+ body,html{
+           margin: 0;
+           padding: 0;
+           font-family: Arial, Helvetica, sans-serif;
+           height: 100%;
+           width: 100%;
+           }
+
+.nav1{
+            
+    background-color: #2b0a49;
+    padding: 10px;
+            
+        }
+        .nav1 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav{
+            
+            height: 40px;
+        }
+        .nav1 li{
+            display: inline;
+        } 
+        .nav1 a{
+            text-decoration: none;
+            color: #fff;
+           /* background-color: #d45b04;*/
+            padding: 5px 15px;
+            position: relative;
+        }
+        .nav1 .login-btn{
+            background-color: #254bf6;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .login-btn:hover{
+            background-color: #05219e;
+        }
+        .nav1 a::after{
+            content:"" ;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #0a65c7;
+            transform: scaleX(0);
+            transition: transform 0.3s
+            ease-in-out;
+            
+        }
+        .nav1 a:hover::after{
+            transform: scaleX(1);
+        }
+        .nav1 img{
+            inline-size: 60px;
+        }
+
+        h1,h2{
+            color: #fff;
+            text-align: center;
+            
+
+        }
+        .container{
+            
+            background: linear-gradient(to right, #000000, #0f9b8e);
+
+
+
+
+
+
+            border: 2px solid #333;
+            margin-bottom: 0;
+            padding: 0px;
+            
+
+
+        }
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            background: linear-gradient(to right, #000000, #0f9b8e);
+
+
+
+
+
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+
+        .box{
+            
+            color: black;
+            padding: 5px;
+            margin: 5px;
+            font-size: 18px;
+            border-radius: 6px;
+            background-color: #eaeaea;
+            
+            
+            
+        }
+        
+        .banner{
+            width: 275px;      
+            height: 183px;     
+            object-fit: cover;
+            
+        }
+
+        .logo{
+            width: 30px;
+            height: 30px;
+            float: right;
+            cursor: pointer;
+            vertical-align: middle;
+            margin-left: 10px;
+            height: 30px;
+
+        }
+        .Join-btn{
+            background-color: #2943b7;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            float: left;
+            display: inline-flex;
+            vertical-align: middle;
+            
+        }
+        .Join-btn:hover{
+            background-color: #0631f2 ;
+        }
+        .rating {
+           color: gold;
+           font-size: 20px;
+        }
+        footer{
+            border-top: 2px solid #fff;
+            background-color: #2f2f2f;
+            margin-top: 0;
+        
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+            margin-top: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+        .end{
+            height: 30px;
+            width: 30px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            justify-content: center;
+        }
+        h5{
+            color: #fff;
+        }
+
+        .flogo{
+            height: 50px;
+            width: 100px;
+            padding-left: 10px;
+            
+        }
+        .bottom{
+            background-color: #2f2f2f;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-right: 10px;
+        }
+        .id{
+            color: #fff;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+        .lang{
+            height: 30px;
+            width: 30px;
+            
+        }
+        .eng{
+            color: #fff;
+            cursor: pointer;
+        }
+        .points{
+            color: #fff;
+            padding-top: 20px;
+            cursor: pointer;
+        }
+        .box p,
+        .box .rating,
+        .box .Join-btn,
+        .box .logo {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.04s ease-in-out;
+        }
+        .box:hover p,
+        .box:hover .rating,
+        .box:hover .Join-btn,
+        .box:hover .logo {
+            opacity: 1;
+            max-height: 100px; 
+            margin-top: 5px;
+            
+        }
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          padding-bottom: 10px;
+        }
